@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="vlad">
+    <meta name="keywords" content="cinema, film, trailer, review">
+    <meta name="description" content="The webpage of the ... Cinema">
+    <base href="index.html">
+
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="styles_booking.css">
+    <script type="text/javascript" src="booking.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title> Cinema </title>
+    <!-- cinemagic; Goodbye, Dragon Inn; Behind the Screen;
+    grand theater; metrograph; mayfair-->
+</head>
+<body>
+    
+    <header>
+
+        <h1 id="title"><img src="popcorn_logo.png" width="70" height="80" alt="cinema logo" id="popcorn_logo"> Cinema Story </h1>
+        
+        <h2> Best cinema for you! </h2>
+    </header>
+
+    <nav>
+        <ul>
+
+            <li class="dropdown"> 
+                <!-- <div class="drophome"> Home </div> -->
+                <a href="index.html" class="drophome"> Home </a>
+                <div class="drophome-content">
+                    <a href="#popular_films"> Popular </a>
+                    <a href="#suggested_films"> Suggestions </a>
+                    <a href="#old_but_gold"> Old but Gold </a>
+                </div>
+            </li>
+
+            <li> <a href="categories.html"> Categories </a> </li>
+            <li> <a href="booking.html"> Booking </a> </li>
+            <li> <a href="news.html"> News </a> </li>
+            <li> <a href="blog.html"> Blog </a> </li>
+            <li> <a href="about_us.html"> About Us </a> </li>
+            <li> <a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    
+    <section id="booking">
+        <h2 id="booking_header"> Book a film! </h2>
+        <article>
+            <h3>Choose your film and your seats!</h3>
+            <p id="booking_text">
+                Unfortunately, we currently only have one screening room, so we can only show one film at a time in a certain evening.
+                At the same time, our current policy allows bookings only for the current day.
+                In the near future, we plan on expanding our business, so we can have multiple screening rooms!
+            </p>
+
+            <p id="booking_text_final">
+                However, we have a wide variety of films, so we are sure you will find something to your liking!
+            </p>
+
+            <p id="booking_seats"></p>
+
+            <!-- selection bar, book button, textarea cu full nume, camp cu nr de tel -->
+
+        </article>
+
+    </section>
+
+
+
+    <section id="input">
+        <article>
+            <h3>Fill in the form below in order to finish your booking!</h3>
+            <form id="booking_form">
+                <fieldset id="booking_fieldset">
+                    <legend class="fieldset_text">Booking info:</legend>
+
+                        <label for="name" class="fieldset_text">Name:</label>
+                        <input type="text" id="name" name="client_name" pattern="[a-zA-Z]+" required> <br>
+
+                        <label for="phone" class="fieldset_text">Phone:</label>
+                        <input type="tel" id="phone" name="phone_number" pattern="^07[0-9]{8}" title="it must have 10 digits and begin with '07'" required> <br>
+
+                        <label for="email" class="fieldset_text">Email:</label>
+                        <input type="email" id="email" name="email" pattern="^\w+@\w+\.\w+$" required> <br>
+
+                        <label for="film" class="fieldset_text">Film:</label>
+                        <select name="film" id="film">
+                            <option selected disabled>Choose a film</option>
+                            <option>John Wick 4</option>
+                            <option>Air</option>
+                            <option>Scream VI</option>
+                            <option>Creed III</option>
+                            <option>Aftersun</option>
+                            <option>Banshees of Inisherin</option>
+                            <option>E.E.A.O.</option>
+                            <option>Top Gun: Maverick</option>
+                            <option>La vita e bella</option>
+                            <option>Chungking Express</option>
+                            <option>The Sacrifice</option>
+                            <option>Bicycle Thieves</option>
+                            <option>...A Valparaiso</option>
+                            <option>Spirited Away</option>
+                            <option>Soul</option>
+                            <option>My Neighbor Totoro</option>
+                            <option>Sieranevada</option>
+                            <option>Doua Lozuri</option>
+                            <option>Balanta</option>
+
+                        </select> <br>
+
+                </fieldset>
+                <button type="submit" id="form_button">Book</button>
+            </form>
+
+        </article>
+
+    </section>
+
+    <section id="clock-section">
+        <h3 id="clock-header"> Hurry up! You don't want to miss your screening! Time moves quickly! </h3>
+        <canvas id="canvas" width="150" height="150"></canvas>
+    </section>
+
+    <section id="recommended">
+        <h2 id="recommended_text"> Don't forget! </h2>
+
+        <p> If you enjoyed our screenings, you can leave a review on our site! </p>
+    </section>
+
+    <!-- animatie cu secvente din filme care se misca -->
+    <footer class="note"> <!-- insert emoji of cinema logo here --> For more info and reviews about the movies, we gladly recommend <a href="https://letterboxd.com/vladzz15/">letterboxd</a>!  </footer>
+</body>
+</html>

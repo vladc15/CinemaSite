@@ -1,0 +1,262 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+     
+    /*background-color: lightcoral;*/
+    background-color: black;
+    color: white;
+
+    padding: 0.3%;
+    
+    box-sizing: border-box;
+}
+
+header {
+    text-align: left;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#popcorn_logo {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: darkorange;
+
+}
+
+nav li {
+    float: left;
+    padding: 0;
+}
+
+nav li a, .drophome {
+    display: block;
+    background-color: darkorange;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+
+nav li a:hover, .dropdown:hover, .drophome:hover {
+    background-color: white;
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+.drophome-content {
+    display: none;
+    position: absolute;
+    background-color: darkorange;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drophome-content a {
+    background-color: darkorange;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.drophome-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .drophome-content {
+    display: block;
+}
+
+.note, .note a {
+    color: aqua;
+}
+
+form ul li {
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+#title {
+    color: darkorange;
+}
+
+#booking_text_final::after {
+    content: "Have fun!";
+    color: darkorange;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+#booking {
+    float: left;
+    width: 75%;
+}
+
+.note {
+    float: left;
+    width: 75%;
+}
+
+#recommended {
+    float: left;
+    width: 25%;
+    padding-left: 1%;
+    text-align: center;
+}
+
+#booking::after, .note::after, #recommended::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#canvas {
+    float: left;
+    width: 25%;
+    padding-left: 1%;
+}
+
+#clock-section {
+    float: left;
+    width: 25%;
+    padding-left: 1%;
+}
+
+.info {
+    float: right;
+}
+
+#recommended_text:hover {
+    background-color: darkorange;
+    color: black;
+    transition: background-color 1s ease-in-out, color 2s ease-in-out, width 1.5s ease-in-out, height 1.5s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    padding-top: 2em;
+}
+
+/*#input {
+    float: left;
+    width: 75%;
+}*/
+
+table {
+    border-spacing: 0.5em;
+}
+
+td {
+    border: 1px solid darkgray;
+    width: 2em;
+    height: 2em;
+    background-color: #00bc00;
+    
+}
+
+fieldset {
+    /*align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;*/
+    margin: 10px;
+
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 3px;
+    /*align-items: center;
+    align-content: center;
+    justify-content: center;*/
+}
+
+#name, #email, #phone, #film {
+    background-color: darkorange;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+button {
+    background-color: darkorange;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 0.8em;
+    margin: 0.8em;
+}
+
+option {
+    background-color: darkorange;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+ /*
+ red - #bc0000
+ grey - #ffffff
+ tr {
+    background-color: red;
+
+ }
+ */
+
+@media screen and (max-width: 800px) {
+    #booking, .note, #recommended, #input, #clock-section, #clock-header {
+        float: none;
+        width: 100%;
+    }
+    #canvas {
+        float: none;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav li, nav li a, .drophome, .drophome-content, nav ul, nav ul li, form ul li, #clock-section, #clock-header {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    #canvas {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 10%;
+    }
+}
+    

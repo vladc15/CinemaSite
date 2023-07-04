@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="vlad">
+    <meta name="keywords" content="cinema, film, trailer, review">
+    <meta name="description" content="The webpage of the ... Cinema">
+    <base href="index.html">
+
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title> Cinema </title>
+    <!-- cinemagic; Goodbye, Dragon Inn; Behind the Screen;
+    grand theater; metrograph; mayfair-->
+</head>
+<body>
+    
+    <header>
+
+        <h1 id="title"><img src="popcorn_logo.png" width="70" height="80" alt="cinema logo" id="popcorn_logo"> Cinema Story</h1>
+        
+        <h2> Best cinema for you! </h2>
+    </header>
+
+    <nav>
+        <ul>
+
+            <li class="dropdown"> 
+                <!-- <div class="drophome"> Home </div> -->
+                <a href="index.html" class="drophome"> Home </a>
+                <div class="drophome-content">
+                    <a href="#popular_films"> Popular </a>
+                    <a href="#suggested_films"> Suggestions </a>
+                    <a href="#old_but_gold"> Old but Gold </a>
+                </div>
+            </li>
+
+            <li> <a href="categories.html"> Categories </a> </li>
+            <li> <a href="booking.html"> Booking </a> </li>
+            <li> <a href="news.html"> News </a> </li>
+            <li> <a href="blog.html"> Blog </a> </li>
+            <li> <a href="about_us.html" class=""> About Us </a> </li>
+            <li> <a href="contact.html" class="info"> Contact </a></li>
+        </ul>
+    </nav>
+
+
+    <!-- de folosit animatie ca in lab 5 cu tigger -->
+
+    <div id="content">
+
+    <!--
+    <div class="side">
+    <section id="most_popular">
+        <h2> This week's most popular film is... </h2>
+        <iframe width="432" height="243" src="https://www.youtube.com/embed/qEVUtrk8_B4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    </section>
+    </div>
+    -->
+
+    <div class="main">
+    <section id="popular_films">
+        <h2> Fresh out the oven! </h2>
+        <p>Check out these newly released movies that are increasing in popularity!</p>
+        <article class="movie-display">
+            
+            <div class="film">
+                <figure>
+                <img src="john_wick.jpg" width="235" height="313" alt="john wick" class="poster">
+                <figcaption> <h3> John Wick 4 </h3> 
+                <ul>
+                    <li> Director: Chad Stahelski </li>
+                    <li> Cast: Keanu Reeves, Laurence <br> Fishburne,  
+                        Bill Skarsgård</li>
+                    <li> Genre: Action, Thriller</li>
+                    <li> Duration: 2h 53min</li>
+                    <li> Rating: 4.2</li>
+                    <li> 02.04: 16:30, 20:00 </li>
+                    <li> 03.04: 15:00, 19:00</li>
+                    <li> 04.04: 14:30, 18:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            
+                <figure>
+                <img src="air.jpg" width="235" height="313" alt="air" class="poster">
+                <figcaption> <h3> Air </h3> 
+                <ul>
+                    <li> Director: Ben Affleck </li>
+                    <li> Cast: Matt Damon, Ben Affleck, <br> 
+                        Jason Bateman</li>
+                    <li> Genre: Drama </li>
+                    <li> Duration: 1h 56min</li>
+                    <li> Rating: 3.8</li>
+                    <li> 02.04: 17:30, 21:00 </li>
+                    <li> 03.04: 16:00, 20:00</li>
+                    <li> 04.04: 15:30, 19:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            </div>
+
+            <div class="film">
+                <figure>
+                <img src="scream.jpg" width="235" height="313" alt="scream" class="poster">
+                <figcaption> <h3> Scream VI </h3>
+                <ul>
+                    <li> Director: Matt Bettinelli-Olpin, Tyler Gillett </li>
+                    <li> Cast: Melissa Barrera, Hayden Panettiere, <br> 
+                        Jenna Ortega</li>
+                    <li> Genre: Horror, Mistery, Thriller</li>
+                    <li> Duration: 2h 8min</li>
+                    <li> Rating: 3.7</li>
+                    <li> 02.04: 16:30, 20:30 </li>
+                    <li> 03.04: 15:00, 19:30</li>
+                    <li> 04.04: 14:30, 19:00</li>
+                </ul>
+                </figcaption>
+                </figure>
+            
+                <figure>
+                <img src="creed.png" width="235" height="313" alt="creed" class="poster">
+                <figcaption> <h3> Creed III </h3>
+                <ul>
+                    <li> Director: Michael B. Jordan </li>
+                    <li> Cast: Michael B. Jordan, Tessa Thompson</li>
+                    <li> Genre: Drama, Action</li>
+                    <li> Duration: 1h 56min</li>
+                    <li> Rating: 3.7</li>
+                    <li> 02.04: 16:30, 20:00 </li>
+                    <li> 03.04: 15:00, 19:30</li>
+                    <li> 04.04: 17:30, 20:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            </div>
+
+        </article>
+    </section>
+    
+    <section id="suggested_films">
+        <h2> You might want to try these! </h2>
+        <p> These are a few successful films from the past months you can still watch: </p>
+        <article class="movie-display">
+            <div class="film">
+                <figure>
+                <img src="aftersun.jpg" width="235" height="313" alt="aftersun" class="poster">
+                <figcaption> <h3> Aftersun </h3>
+                <ul>
+                    <li> Director: Charlotte Wells </li>
+                    <li> Cast: Paul Mescal, Frankie Corio, <br> 
+                        Celia Rowlson-Hall</li>
+                    <li> Genre: Drama</li>
+                    <li> Duration: 1h 41min</li>
+                    <li> Rating: 4.3</li>
+                    <li> 02.04: 17:30, 21:00 </li>
+                    <li> 03.04: 13:00, 20:00</li>
+                    <li> 04.04: 15:30, 20:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            
+                <figure>
+                <img src="banshees.jpg" width="235" height="313" alt="banshees" class="poster">
+                <figcaption> <h3> Banshees of Inisherin </h3>
+                <ul>
+                    <li> Director: Martin McDonagh </li>
+                    <li> Cast: Colin Farrell, Brendan Gleeson, <br>
+                        Kerry Condon</li>
+                    <li> Genre: Drama, Thriller, Comedy </li>
+                    <li> Duration: 1h 54min</li>
+                    <li> Rating: 4.1</li>
+                    <li> 02.04: 14:30, 19:00 </li>
+                    <li> 03.04: 15:00, 21:00</li>
+                    <li> 04.04: 13:30, 20:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            </div>
+
+            <div class="film">
+
+                <figure>
+                <img src="everything.jpg" width="235" height="313" alt="everything" class="poster">
+                <figcaption> <h3> Everything Everywhere All at Once </h3>
+                <ul>
+                    <li> Director: Daniel Kwan, Daniel, Scheinert </li>
+                    <li> Cast: Michelle Yeoh, Ke Huy Quan, <br> 
+                        Jamie Lee Curtis</li>
+                    <li> Genre: Adventure, Action, SF, <br> 
+                        Drama, Comedy</li>
+                    <li> Duration: 2h 20min</li>
+                    <li> Rating: 4.4</li>
+                    <li> 02.04: 17:30, 20:00 </li>
+                    <li> 03.04: 14:00, 20:30</li>
+                    <li> 04.04: 15:30, 20:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            
+                <figure>
+                <img src="topgun.jpg" width="235" height="313" alt="topgun" class="poster">
+                <figcaption> <h3> Top Gun: Maverick </h3>
+                <ul>
+                    <li> Director: Joseph Kosinski </li>
+                    <li> Cast: Tom Cruise, Miles Teller, <br>
+                        Jennifer Connelly</li>
+                    <li> Genre: Drama, Action</li>
+                    <li> Duration: 2h 1min</li>
+                    <li> Rating: 4.1</li>
+                    <li> 02.04: 18:30, 20:00 </li>
+                    <li> 03.04: 14:00, 20:30</li>
+                    <li> 04.04: 15:30, 20:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            </div>
+
+        </article>
+    </section>
+    
+    <section id="old_but_gold">
+        <h2 class="old_but_gold_content"> Old but Gold! </h2>
+        <article class="movie-display">
+            <p> Every month we hold a poll where we decide upon our 4 feature films and 1 short film that get a screening! <br>
+             These films were the most voted on our poll for this month's special screenings of <b> <i class="old_but_gold_content"> Old but Gold </i> </b> !</p>
+
+            <div class="film">
+                <figure>
+                <img src="la_vita_e_bella.jpg" width="235" height="313" alt="la vita e bella" class="poster">
+                <figcaption> <h3> La vita e bella </h3>
+                <ul>
+                    <li> Director: Roberto Benigni </li>
+                    <li> Cast: Roberto Benigni, Nicoletta Braschi, <br> 
+                        Giorgio Cantarini </li>
+                    <li> Genre: Drama, Comedy </li>
+                    <li> Duration: 1h 56min</li>
+                    <li> Rating: 4.2</li>
+                    <li> 02.04: 18:00 </li>
+                    <li> 03.04: 20:30</li>
+                    <li> 04.04: 20:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            
+                <figure>
+                <img src="chungking.jpg" width="235" height="313" alt="chungking" class="poster">
+                <figcaption> <h3> Chungking Express </h3>
+                <ul>
+                    <li> Director: Wong Kar-Wai </li>
+                    <li> Cast: Takeshi Kaneshiro, Brigitte Lin, <br> 
+                        Tony Leung </li>
+                    <li> Genre: Drama, Romance, Comedy </li>
+                    <li> Duration: 1h 43min</li>
+                    <li> Rating: 4.3</li>
+                    <li> 02.04: 19:00 </li>
+                    <li> 03.04: 20:30</li>
+                    <li> 04.04: 21:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+            </div>
+
+            <div class="film">
+                <figure>
+                <img src="sacrifice.jpg" width="235" height="313" alt="sacrifice" class="poster">
+                <figcaption> <h3> The Sacrifice </h3>
+                <ul>
+                    <li> Director: Andrei Tarkovsky </li>
+                    <li> Cast: Erland Josephson, Susan Fleetwood, <br>
+                        Allan Edwall </li>
+                    <li> Genre: Drama </li>
+                    <li> Duration: 2h 29min</li>
+                    <li> Rating: 4.2 </li>
+                    <li> 02.04: 19:00 </li>
+                    <li> 03.04: 20:30</li>
+                    <li> 04.04: 20:00</li>
+                </ul>
+                </figcaption>
+                </figure>
+            
+                <figure>
+                <img src="bicycle.jpg" width="235" height="313" alt="bicycle" class="poster">
+                <figcaption> <h3> Bicycle Thieves </h3>
+                <ul>
+                    <li> Director: Vittorio De Sica </li>
+                    <li> Cast: Lamberto Maggiorani, Enzo Staiola </li>
+                    <li> Genre: Drama </li>
+                    <li> Duration: 1h 29min</li>
+                    <li> Rating: 4.2 </li>
+                    <li> 02.04: 20:00 </li>
+                    <li> 03.04: 21:30</li>
+                    <li> 04.04: 21:00</li>
+                </ul>
+                </figcaption>
+                </figure>
+            </div>
+
+            
+            <div class="film">
+                <!--
+                <figure>
+                <img src="12.jpg" width="235" height="313" alt="12" class="poster">
+                <figcaption> <h3> 12 Angry Men </h3>
+                <ul>
+                    <li> Director: Sidney Lumet </li>
+                    <li> Cast: Martin Balsam, John Fiedler, <br> 
+                        Lee J. Cobb </li>
+                    <li> Genre: Drama </li>
+                    <li> Duration: 1h 37min</li>
+                    <li> Rating: 4.5</li>
+                    <li> 02.04: 20:30 </li>
+                    <li> 03.04: 20:30</li>
+                    <li> 04.04: 21:30</li>
+                </ul>
+                </figcaption>
+                </figure>
+                -->
+                <figure>
+                <img src="valparaiso.jpg" width="235" height="313" alt="valparaiso" class="poster">
+                <figcaption> <h3 class="old_but_gold_content"> ...A Valparaiso </h3>
+                <ul>
+                    <li> Director: Joris Ivens </li>
+                    <li> Cast: Roger Pigaut </li>
+                    <li> Genre: Documentary </li>
+                    <li> Duration: 24min</li>
+                    <li> Rating: 3.9</li>
+                    <li> 02.04: 18:00 </li>
+                    <li> 03.04: 18:30</li>
+                    <li> 04.04: 19:00</li>
+                </ul>
+                </figcaption>
+                </figure>
+            </div>
+            
+
+        </article>
+
+    </section>
+    </div>
+
+    <div class="side">
+        <section id="most_popular">
+            <h2> This week's most popular film is... </h2>
+            <iframe width="432" height="243" src="https://www.youtube.com/embed/qEVUtrk8_B4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    
+        </section>
+
+    <section id="recommended">
+        <h2 id="recommended_text"> Don't forget! </h2>
+
+        <p> If you enjoyed our screenings, you can leave a review on our site! </p>
+        <p> Also, if you want to quickly search stuff about a film or the cast members, you can do so below! </p>
+
+        <iframe src="https://wikipedia.com/" width="350" height="500"></iframe>
+
+    </section>
+
+    <aside class="ad">
+        <h4> <a href="https://www.youtube.com/watch?v=Itt_BYdoSTo" class="ad"> Having problems with finding a new job? We've got you covered! </a> </h4>
+    </aside>
+
+    </div>
+    </div>
+
+    <!-- de pus iconita cu ceas la durata -->
+
+    <!-- de pus iconita cu stea la rating -->
+
+    <!-- buton pentru trailer => cu javascript -->
+
+    <!-- animatie cu secvente din filme care se misca -->
+
+    <!-- animatiile puse la blog: robot, pisica-->
+
+    <!-- la contact: tabel cu programul + adresa pe maps + nr de tel, email -->
+    <footer class="note"> <!-- insert emoji of cinema logo here --> For more info and reviews about the movies, we gladly recommend <a href="https://letterboxd.com/vladzz15/">letterboxd</a>!  </footer>
+</body>
+</html>
